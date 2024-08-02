@@ -1,0 +1,95 @@
+﻿@page "/"
+
+<PageTitle>Generador de Equipos de Futbol 5</PageTitle>
+
+<div class="background">
+    <h1>Generador de Equipos de Futbol 5</h1>
+
+<div style="text-align: center;">
+    <h2 style="color: white;">Seleccione la cantidad de jugadores.</h2>
+    <button type="button" style="margin: 5px;" @onclick="() => SetearCantidadJugadores(10)">5 vs 5</button> 
+    <button type="button" style="margin: 5px;" @onclick="() => SetearCantidadJugadores(12)">6 vs 6</button>
+    <button type="button" style="margin: 5px;" @onclick="() => SetearCantidadJugadores(14)">7 vs 7</button>
+</div>
+
+    <p>Ingrese los nombres de los jugadores uno por línea:</p>
+
+    <textarea @bind="NombreJugadoresTxt" rows="@cantJugadores" cols="50" placeholder="Ingrese los nombres acá..."></textarea>
+
+    <button type="button" @onclick="GenerarEquipos">Generar equipos</button>
+
+    @if (mostrarEquipos)
+    {
+        <p>Equipo 1: @equipo1</p>
+        <p>Equipo 2: @equipo2</p>
+    }
+
+    <!-- Integración del componente de aviso -->
+    <Aviso @ref="aviso" />
+</div>
+
+@code {
+    private string equipo1 = "";
+    private string equipo2 = "";
+    private bool mostrarEquipos = false; 
+    private string NombreJugadoresTxt = ""; 
+    private int cantJugadores = 0;
+
+    private Aviso aviso; // Referencia al componente de aviso
+
+    private void SetearCantidadJugadores(int totalJugadores)
+    {
+        cantJugadores = totalJugadores;
+        mostrarEquipos = false; // Oculta los equipos previos si los hay
+        NombreJugadoresTxt = ""; // Reinicia la entrada de nombres
+    }
+
+    private void GenerarEquipos()
+    {
+        if (cantJugadores == 0)
+        {
+            aviso.Mostrar("Seleccione una cantidad de jugadores.");
+            return;
+        }
+
+        var nombresJugadores = ExtraerNombresDelTextArea();
+
+        if (nombresJugadores.Count < cantJugadores)
+        {
+            aviso.Mostrar($"Hay menos de {cantJugadores} jugadores anotados. Por favor ingrese {cantJugadores} nombres.");
+        }
+        else if (nombresJugadores.Count > cantJugadores)
+        {
+            aviso.Mostrar($"Hay más de {cantJugadores} jugadores anotados. Por favor solo ingrese {cantJugadores} nombres.");
+        }
+        else
+        {
+            // Mezcla aleatoriamente los nombres
+            nombresJugadores = Shuffle(nombresJugadores);
+
+            // Divide la lista en dos equipos
+            equipo1 = string.Join(", ", nombresJugadores.Take(nombresJugadores.Count / 2));
+            equipo2 = string.Join(", ", nombresJugadores.Skip(nombresJugadores.Count / 2));
+
+            mostrarEquipos = true;
+        }
+    }
+
+    private List<string> ExtraerNombresDelTextArea()
+    {
+        // Divide el contenido del textarea en líneas
+        var playerNamesTextLines = NombreJugadoresTxt.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+
+        // Elimina los espacios en blanco de cada línea y devuelve como una lista
+        return playerNamesTextLines
+            .Select(line => line.Trim())
+            .Where(line => !string.IsNullOrWhiteSpace(line))
+            .ToList();
+    }
+
+    private List<string> Shuffle(List<string> list)
+    {
+        var random = new Random();
+        return list.OrderBy(x => random.Next()).ToList();
+    }
+}

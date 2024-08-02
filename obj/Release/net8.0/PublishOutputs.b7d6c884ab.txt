@@ -1,0 +1,4 @@
+C:\Users\Usuario\Desktop\Generador De Equipos F5\GeneradorEquiposF5\publish\publish\web.config
+C:\Users\Usuario\Desktop\Generador De Equipos F5\GeneradorEquiposF5\publish\publish\wwwroot\sample-data\weather.json
+C:\Users\Usuario\Desktop\Generador De Equipos F5\GeneradorEquiposF5\publish\publish\wwwroot\_framework\blazor.boot.json
+C:\Users\Usuario\Desktop\Generador De Equipos F5\GeneradorEquiposF5\publish\web.config

@@ -1,0 +1,59 @@
+/* home.razor.css */
+:host[b-gw6usng318] {
+    display: block; /* Asegúrate de que el componente se comporte como un bloque */
+    height: 100vh; /* Opcional: Hacer que el componente ocupe toda la altura del viewport */
+  }
+  
+  .background[b-gw6usng318] {
+    background-color: #259489; /* Color turquesa */
+    height: 100vh; /* Asegúrate de que el contenedor cubra toda la altura del viewport */
+    width: 100%; /* Asegúrate de que el contenedor cubra toda la anchura del viewport */
+    display: flex; /* Centrar elementos horizontalmente */
+    justify-content: center; /* Centrar elementos horizontalmente en el contenedor */
+    align-items: center; /* Centrar elementos verticalmente */
+    flex-direction: column; /* Organizar elementos en columna */
+    gap: 10px; /* Espacio de 10px entre elementos */
+  }
+  
+  h2[b-gw6usng318] {
+    color:white; /* Color de texto blanco */
+  }
+
+  h1[b-gw6usng318] {
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centrar texto horizontalmente */
+    font-size: 2.5em; /* Aumenta el tamaño de la fuente del título */
+  }
+
+  
+  p[b-gw6usng318] {
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centrar texto horizontalmente */
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente de los equipos */
+  }
+  
+  textarea[b-gw6usng318] {
+    width: 30%; /* Reduce el ancho del textarea */
+    margin: 5px auto; /* Centrar textarea horizontalmente y reducir margen */
+    padding: 10px; /* Añade relleno al textarea */
+  }
+  
+  button[b-gw6usng318] {
+    margin: 10px auto; /* Centrar botón horizontalmente y reducir margen */
+  }
+  
+  .equipo1[b-gw6usng318],
+  .equipo2[b-gw6usng318] {
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centrar texto horizontalmente */
+  }
+
+  .botones-equipos[b-gw6usng318] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botones-container button[b-gw6usng318] {
+    margin: 5px; /* Espacio entre botones */
+}

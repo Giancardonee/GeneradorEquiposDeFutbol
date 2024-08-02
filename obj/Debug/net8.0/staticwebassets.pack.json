@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "c:\\Users\\Usuario\\Desktop\\Generador De Equipos F5\\GeneradorEquiposF5\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "c:\\Users\\Usuario\\Desktop\\Generador De Equipos F5\\GeneradorEquiposF5\\obj\\Debug\\net8.0\\compressed\\kupfgmq8ze.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "c:\\Users\\Usuario\\Desktop\\Generador De Equipos F5\\GeneradorEquiposF5\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GeneradorEquiposF5.styles.css",
+      "PackagePath": "staticwebassets\\GeneradorEquiposF5.styles.css"
+    },
+    {
+      "Id": "c:\\Users\\Usuario\\Desktop\\Generador De Equipos F5\\GeneradorEquiposF5\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "c:\\Users\\Usuario\\Desktop\\Generador De Equipos F5\\GeneradorEquiposF5\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "c:\\Users\\Usuario\\Desktop\\Generador De Equipos F5\\GeneradorEquiposF5\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "c:\\Users\\Usuario\\Desktop\\Generador De Equipos F5\\GeneradorEquiposF5\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "c:\\Users\\Usuario\\Desktop\\Generador De Equipos F5\\GeneradorEquiposF5\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "c:\\Users\\Usuario\\Desktop\\Generador De Equipos F5\\GeneradorEquiposF5\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "c:\\Users\\Usuario\\Desktop\\Generador De Equipos F5\\GeneradorEquiposF5\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GeneradorEquiposF5.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GeneradorEquiposF5.props",
+      "PackagePath": "build\\GeneradorEquiposF5.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GeneradorEquiposF5.props",
+      "PackagePath": "buildMultiTargeting\\GeneradorEquiposF5.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GeneradorEquiposF5.props",
+      "PackagePath": "buildTransitive\\GeneradorEquiposF5.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
